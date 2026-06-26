@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComplexityLens Pro | Panth Shah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class' }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-100 min-h-screen transition-colors duration-300">
+
+    <section class="min-h-screen flex flex-col justify-center items-center px-6 relative bg-gradient-to-b from-slate-100 to-slate-50 dark:from-slate-950 dark:to-slate-900 border-b border-slate-200 dark:border-slate-800">
+        <div class="absolute top-6 right-6">
+            <button onclick="document.documentElement.classList.toggle('dark')" class="p-2 rounded-lg border border-slate-300 dark:border-slate-700 text-amber-500 hover:bg-slate-100 dark:hover:bg-slate-800 transition">
+                ⚙️ Toggle Theme
+            </button>
+        </div>
+
+        <div class="max-w-3xl text-center space-y-6">
+            <span class="text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-500 border border-emerald-500/20">
+                Engineering Portfolio Project
+            </span>
+            
+            <h1 class="text-5xl md:text-6xl font-black tracking-tight">
+                Complexity<span class="text-emerald-500">Lens Pro</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-slate-500 dark:text-slate-400 font-medium">
+                An algorithmic performance engine designed and developed by 
+                <span class="text-slate-800 dark:text-slate-100 font-semibold underline decoration-emerald-500 decoration-2">Panth Shah</span>.
+            </p>
+
+            <div class="flex flex-wrap justify-center items-center gap-3 pt-4">
+                <a href="https://linkedin.com/in/panth-shah-445144389" target="_blank" rel="noreferrer" class="flex items-center gap-2 text-sm font-semibold px-4 py-2 rounded-xl border border-slate-300 dark:border-slate-700 hover:border-emerald-500 dark:hover:border-emerald-500 hover:bg-slate-100 dark:hover:bg-slate-800/50 transition">
+                    🌐 LinkedIn Profile
+                </a>
+                <a href="https://github.com/PanthShah2007" target="_blank" rel="noreferrer" class="flex items-center gap-2 text-sm font-semibold px-4 py-2 rounded-xl border border-slate-300 dark:border-slate-700 hover:border-emerald-500 dark:hover:border-emerald-500 hover:bg-slate-100 dark:hover:bg-slate-800/50 transition">
+                    💻 GitHub Space
+                </a>
+                <a href="mailto:panthshah2007@gmail.com" class="flex items-center gap-2 text-sm font-semibold px-4 py-2 rounded-xl border border-slate-300 dark:border-slate-700 hover:border-emerald-500 dark:hover:border-emerald-500 hover:bg-slate-100 dark:hover:bg-slate-800/50 transition">
+                    ✉️ Email Contact
+                </a>
+            </div>
+
+            <div class="pt-8">
+                <a href="#workspace" onclick="revealWorkspace()" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-lg py-4 px-8 rounded-xl shadow-lg shadow-emerald-600/20 transform hover:-translate-y-0.5 active:translate-y-0 transition duration-150">
+                    Get Started &rarr;
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div id="workspace" class="hidden opacity-0 transition-opacity duration-700 ease-in-out">
+        
+        <header class="border-b border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md sticky top-0 z-50 p-4">
+            <div class="max-w-7xl mx-auto flex justify-between items-center">
+                <span class="font-extrabold text-xl text-emerald-500">ComplexityLens Workspace</span>
+                <span class="text-xs text-slate-400 font-mono">Dev ID: 25bec121</span>
+            </div>
+        </header>
+
+        <main class="max-w-7xl mx-auto p-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
+            
+            <div class="flex flex-col rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 p-6 shadow-sm gap-6">
+                <div>
+                    <h2 class="text-xl font-bold tracking-tight">Code Architecture Settings</h2>
+                    <p class="text-xs text-slate-400 mt-1">Configure your algorithm blocks to instantly determine accurate complexity thresholds.</p>
+                </div>
+
+                <div class="p-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/40 space-y-4">
+                    <span class="text-sm font-bold text-emerald-500 block">Loop Segment Alpha</span>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-medium text-slate-400 mb-1">Scale Variable</label>
+                            <select id="b1-var" onchange="calculateMetrics()" class="w-full bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded p-1.5 text-sm focus:outline-none focus:border-emerald-500">
+                                <option value="n">n</option>
+                                <option value="m">m</option>
+                                <option value="k">k</option>
+                                <option value="1">None (Constant)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-slate-400 mb-1">Step Mechanics</label>
+                            <select id="b1-step" onchange="calculateMetrics()" class="w-full bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded p-1.5 text-sm focus:outline-none focus:border-emerald-500">
+                                <option value="linear">Linear (i++, i--)</option>
+                                <option value="logarithmic">Logarithmic (i *= 2, i /= 2)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/40 space-y-4">
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm font-bold text-emerald-500">Loop Segment Beta</span>
+                        <label class="inline-flex items-center gap-2 text-xs text-slate-400">
+                            <input type="checkbox" id="b2-active" checked onchange="calculateMetrics()" class="rounded border-slate-700 text-emerald-600 focus:ring-emerald-500"> Nested inside Alpha?
+                        </label>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-medium text-slate-400 mb-1">Scale Variable</label>
+                            <select id="b2-var" onchange="calculateMetrics()" class="w-full bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded p-1.5 text-sm focus:outline-none focus:border-emerald-500">
+                                <option value="m" selected>m</option>
+                                <option value="n">n</option>
+                                <option value="k">k</option>
+                                <option value="1">None (Constant)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-slate-400 mb-1">Step Mechanics</label>
+                            <select id="b2-step" onchange="calculateMetrics()" class="w-full bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded p-1.5 text-sm focus:outline-none focus:border-emerald-500">
+                                <option value="logarithmic" selected>Logarithmic (j *= 2)</option>
+                                <option value="linear">Linear (j++)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/40 grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-medium text-slate-400 mb-1">Dynamic Allocation</label>
+                        <select id="memory-flag" onchange="calculateMetrics()" class="w-full bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded p-1.5 text-sm focus:outline-none focus:border-emerald-500">
+                            <option value="1">O(1) Auxiliary Stack</option>
+                            <option value="n">O(n) Heap Vectors / Arrays</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium text-slate-400 mb-1">Condition Branches</label>
+                        <input type="number" id="branch-count" value="0" min="0" oninput="calculateMetrics()" class="w-full bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded p-1.5 text-sm focus:outline-none focus:border-emerald-500">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-6">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm">
+                        <p class="text-xs font-medium tracking-wide uppercase text-slate-500 dark:text-slate-400">Calculated Time</p>
+                        <p id="time-proof" class="text-2xl font-black mt-2 text-amber-500">O(n * log m)</p>
+                    </div>
+                    <div class="p-5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm">
+                        <p class="text-xs font-medium tracking-wide uppercase text-slate-500 dark:text-slate-400">Calculated Space</p>
+                        <p id="space-proof" class="text-2xl font-black mt-2 text-blue-500">O(1)</p>
+                    </div>
+                    <div class="p-5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm">
+                        <p class="text-xs font-medium tracking-wide uppercase text-slate-500 dark:text-slate-400">Cyclomatic Bounds</p>
+                        <p id="cyclo-proof" class="text-2xl font-black mt-2 text-purple-500">3</p>
+                    </div>
+                    <div class="p-5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm">
+                        <p class="text-xs font-medium tracking-wide uppercase text-slate-500 dark:text-slate-400">Pipeline State</p>
+                        <p id="state-proof-msg" class="text-2xl font-black mt-2 text-emerald-500">Optimal</p>
+                    </div>
+                </div>
+
+                <div class="flex-1 p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm">
+                    <h3 class="font-bold text-lg mb-4">📐 Complexity Equations Proof</h3>
+                    <div id="equation-display" class="font-mono text-sm space-y-3 text-slate-600 dark:text-slate-300">
+                        </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Unhide and transition the calculation workspace section smoothly
+        function revealWorkspace() {
+            const workspace = document.getElementById('workspace');
+            workspace.classList.remove('hidden');
+            setTimeout(() => {
+                workspace.classList.add('opacity-100');
+                calculateMetrics();
+            }, 50);
+        }
+
+        function calculateMetrics() {
+            let v1 = document.getElementById('b1-var').value;
+            let s1 = document.getElementById('b1-step').value;
+            let v2 = document.getElementById('b2-var').value;
+            let s2 = document.getElementById('b2-step').value;
+            let nested = document.getElementById('b2-active').checked;
+            let mem = document.getElementById('memory-flag').value;
+            let branches = parseInt(document.getElementById('branch-count').value) || 0;
+
+            let t1 = (s1 === 'logarithmic' && v1 !== '1') ? `log ${v1}` : v1;
+            let t2 = (s2 === 'logarithmic' && v2 !== '1') ? `log ${v2}` : v2;
+
+            let finalTime = "O(1)";
+            let mathSteps = [];
+
+            if (v1 === '1' && (v2 === '1' || !nested)) {
+                finalTime = "O(1)";
+                mathSteps.push("• Execution path operates on simple constant operations containing zero scale dependencies.");
+            } else if (nested) {
+                if (v1 !== '1' && v2 !== '1') {
+                    if (v1 === v2 && s1 === s2) {
+                        finalTime = (s1 === 'logarithmic') ? `O((log ${v1})^2)` : `O(${v1}^2)`;
+                    } else {
+                        finalTime = `O(${t1} * ${t2})`;
+                    }
+                    mathSteps.push(`• Nesting structure detected: Loop Beta executes completely for every single outer iteration of Loop Alpha.`);
+                    mathSteps.push(`• Calculation formulation: f(${v1}) × g(${v2}) = Matrix Work Area.`);
+                } else {
+                    finalTime = `O(${v1 !== '1' ? t1 : t2})`;
+                }
+            } else {
+                let components = [];
+                if (v1 !== '1') components.push(t1);
+                if (v2 !== '1') components.push(t2);
+                
+                finalTime = components.length > 0 ? `O(${components.join(" + ")})` : "O(1)";
+                mathSteps.push("• Parallel Execution paths detected: Loop blocks run one after another independently.");
+                mathSteps.push("• Operational properties combined linearly through additive algebraic properties.");
+            }
+
+            let explicitLoops = 0;
+            if (v1 !== '1') explicitLoops++;
+            if (v2 !== '1') explicitLoops++;
+            let cyclomaticMetric = 1 + explicitLoops + branches;
+
+            document.getElementById('time-proof').innerText = finalTime;
+            document.getElementById('space-proof').innerText = `O(${mem})`;
+            document.getElementById('cyclo-proof').innerText = cyclomaticMetric;
+            document.getElementById('state-proof-msg').innerText = cyclomaticMetric > 4 ? "Refactor Suggested" : "Optimal Structure";
+
+            let eqBox = document.getElementById('equation-display');
+            eqBox.innerHTML = "";
+            mathSteps.push(`• Structural validation checks out: Space context maps cleanly to an auxiliary value of O(${mem}).`);
+            
+            mathSteps.forEach(step => {
+                let p = document.createElement('p');
+                p.className = "p-3 rounded-lg border border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-950/40 text-xs";
+                p.innerText = step;
+                eqBox.appendChild(p);
+            });
+        }
+    </script>
+</body>
+</html>
