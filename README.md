@@ -1,96 +1,152 @@
 # 🚀 ComplexityLens Pro
 
-> **Analyze your code beyond syntax. Understand its efficiency, identify bottlenecks, and write smarter algorithms.**
+ComplexityLens Pro is an interactive web application that helps students and programmers analyze the **time complexity** and **space complexity** of algorithms by configuring loop structures and execution patterns.
+
+Instead of manually deriving complexity equations, users can build algorithm structures using simple controls and instantly view the calculated complexity along with an explanation of how the result is obtained.
 
 ## 🌐 Live Demo
-### 🔗 https://panthshah2007.github.io/ComplexityLens-Pro/
+
+https://panthshah2007.github.io/ComplexityLens-Pro/
 
 ---
 
 ## 📖 Overview
 
-ComplexityLens Pro is a modern web-based code analysis platform that helps developers, students, and competitive programmers understand the efficiency of their algorithms through intelligent static code analysis. Simply paste your source code, choose your programming language, and receive an instant estimate of its **Time Complexity**, **Space Complexity**, and **Cyclomatic Complexity**.
+ComplexityLens Pro simplifies algorithm analysis by allowing users to configure different loop segments, nesting relationships, and memory usage. Based on the selected configuration, the application computes:
 
-Beyond complexity estimation, the platform provides detailed explanations of how the results were derived, highlights potential performance bottlenecks, and offers optimization suggestions to improve algorithm efficiency. Interactive visualizations and code quality metrics make it easier to understand your program's structure and performance at a glance.
+- Time Complexity
+- Space Complexity
+- Cyclomatic Complexity
+- Complexity Equation Proof
+- Algorithm Structure Analysis
 
-Whether you're preparing for coding interviews, solving competitive programming problems, learning Data Structures & Algorithms, or reviewing production code, ComplexityLens Pro helps you write cleaner, faster, and more maintainable software.
+This makes it a useful educational tool for learning Data Structures & Algorithms and understanding algorithm efficiency.
 
 ---
 
 ## ✨ Features
 
-- ⚡ Automatic Time Complexity estimation
-- 💾 Space Complexity analysis
-- 🔀 Cyclomatic Complexity calculation
-- 📊 Interactive charts and visualizations
-- 🧠 Intelligent complexity explanations
-- 🚀 Performance optimization suggestions
-- 📈 Code quality and readability metrics
-- 📂 Source file upload support
-- 💻 Multi-language support
-- 🌙 Clean, responsive Dark & Light mode interface
+- ⚡ Instant Time Complexity Calculation
+- 💾 Space Complexity Estimation
+- 🔁 Support for Nested and Independent Loops
+- 📊 Cyclomatic Complexity Counter
+- 📐 Automatic Complexity Equation Proof
+- 🧠 Algorithm Structure Analysis
+- 📱 Responsive Dark-Themed Interface
+- 🎨 Modern and Minimal UI
 
 ---
 
-## 🛠️ Tech Stack
+## 🔍 Supported Loop Types
 
-### Frontend
+Users can configure different iteration patterns such as:
+
+- Linear Iteration (i++, i--)
+- Logarithmic Iteration (i *= 2)
+- Nested Loops
+- Independent Loops
+- Dynamic Memory Allocation
+- Conditional Branches
+
+---
+
+## 🖥️ Technologies Used
+
 - HTML5
 - CSS3
-- JavaScript (ES6+)
-
-### Libraries & Tools
-- Monaco Editor
-- Prism.js
-- Chart.js
+- JavaScript (Vanilla)
 
 ---
 
-## 🎯 Why ComplexityLens Pro?
+## 📂 Project Structure
 
-Understanding algorithm complexity is one of the most important yet challenging aspects of programming. Manually estimating computational complexity often requires careful analysis of loops, recursion, data structures, and algorithmic patterns.
-
-ComplexityLens Pro simplifies this process by transforming source code into meaningful performance insights within seconds. Instead of only displaying a complexity value, it explains *why* that complexity occurs, helping developers improve both their coding skills and algorithmic thinking.
-
-The goal of this project is to make algorithm analysis more accessible, educational, and practical for programmers of all experience levels.
-
----
-
-## 🚀 Future Enhancements
-
-- 🤖 AI-powered complexity detection
-- 📄 Export analysis as PDF
-- 🔗 GitHub repository analysis
-- ⚖️ Side-by-side code comparison
-- 🧩 Algorithm pattern recognition (DFS, BFS, DP, Binary Search, etc.)
-- 📈 Runtime estimation for different input sizes
-- ☁️ User authentication and saved analysis history
-- 📱 Progressive Web App (PWA) support
+```
+ComplexityLens-Pro/
+│
+├── index.html
+├── style.css
+├── script.js
+├── assets/
+└── README.md
+```
 
 ---
 
-## 💡 Use Cases
+## 🚀 How to Use
 
-- 👨‍🎓 Learning Data Structures & Algorithms
-- 🏆 Competitive Programming
-- 💼 Technical Interview Preparation
-- 🚀 Code Optimization
-- 🛠️ Software Development
-- 🎓 Academic Projects
+1. Open the website.
+2. Configure **Loop Segment Alpha**.
+3. Configure **Loop Segment Beta**.
+4. Choose whether the loops are nested.
+5. Select the memory allocation type.
+6. Enter the number of conditional branches.
+7. The application instantly displays:
+   - Time Complexity
+   - Space Complexity
+   - Cyclomatic Complexity
+   - Pipeline State
+   - Mathematical Complexity Proof
 
 ---
 
-## 👨‍💻 Developed By
+## 🎯 Use Cases
+
+- DSA Learning
+- Algorithm Analysis
+- College Assignments
+- Competitive Programming
+- Interview Preparation
+- Understanding Big-O Notation
+
+---
+
+---
+
+## 🌟 Future Improvements
+
+- More than two loop segments
+- Recursive algorithm analysis
+- Tree recursion visualization
+- Graph complexity analysis
+- Complexity graph plotting
+- Export analysis as PDF
+- Step-by-step derivation mode
+- Mobile app version
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository.
+2. Create a feature branch.
+3. Commit your changes.
+4. Push the branch.
+5. Open a Pull Request.
+
+---
+
+## 👨‍💻 Author
 
 **Panth Shah**
 
-- **GitHub:** https://github.com/PanthShah2007
-- **LinkedIn:** https://www.linkedin.com/in/panth-shah-445144389
+GitHub: https://github.com/PanthShah2007
 
 ---
 
-## ⭐ Support
+## ⭐ Show Your Support
 
-If you found **ComplexityLens Pro** useful, consider giving this repository a **⭐ Star**. Your support motivates me to continue building open-source tools that help developers learn, analyze, and write better code.
+If you found this project useful, consider giving it a ⭐ on GitHub!
 
-If you have ideas for improvements or discover a bug, feel free to open an issue or submit a pull request. Contributions are always welcome!
+It helps the project reach more learners and encourages future development.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+> **"Write better algorithms by understanding their complexity."**
